@@ -1,0 +1,43 @@
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h1 {
+  color: lightblue;
+}
+
+a {
+  color: white;
+  background-color: lime;
+}
+
+div p {
+  background-color: black;
+}
+div p b {
+  color: rgb(0, 255, 64);
+}
+
+body {
+  background-color: black;
+  color: lightgrey;
+  font-size: 17px;
+  margin: 20%;
+}
+
+#id-1 {
+  font-size: 14px;
+  background-color: #ff4d4d;
+}
+
+#id-2 {
+  font-size: 18px;
+  background-color: #ff9999;
+}
+
+#id-3 {
+  font-size: 22px;
+  background-color: #ffe6e6;
+}/*# sourceMappingURL=style.css.map */

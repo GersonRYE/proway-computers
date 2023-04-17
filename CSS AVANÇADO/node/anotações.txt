@@ -1,0 +1,11 @@
+// executa a porta
+$ node index
+
+// caso de erro instale o less
+$ npm install less
+
+// caso de erro no 'ejs' instale
+$ npm install i ejs
+
+// instale o express
+ npm install express

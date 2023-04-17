@@ -1,0 +1,13 @@
+// comando para baixar os modulos do react
+npm i create-react-app
+
+// comando para criar o projeto
+npx create-react-app meu-app
+
+// instalar o styled
+npm install styled-components
+
+// roda a app
+npm start
+
+aula 6D CSA 

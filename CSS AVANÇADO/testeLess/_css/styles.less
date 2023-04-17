@@ -1,0 +1,95 @@
+// @blue: blue;
+// @cor2: red;
+// @cor3: yellow;
+// @width: 0.15;
+
+@cor: blue;
+@cor_cinza_claro: rgb(210, 212, 208);
+@tamanho: 25px;
+
+// .drop-shadow {
+//   text-shadow: 2px 1px 1px #ccc;
+//   text-decoration: underline;
+// }
+
+// h1 {
+//   color: @blue;
+// }
+
+// body {
+//     background-color: rgb(210,212,208);
+// }
+
+// p {
+//   color: @blue;
+//   b {
+//     color: @cor3;
+//     background-color: @cor2;
+//   }
+// }
+
+// p {
+//     color: if(iscolor(@cor2), @cor2, @cor3);
+//     width: percentage(@width);
+// }
+
+body {
+  background-color: @cor_cinza_claro;
+}
+
+// h1 {
+//     .cores();
+//     text-shadow: 2px 1px 1px #7a7b7c;
+//     font-size: 50px;
+// }
+
+// p {
+//     .cores();
+//     font-size: 23px;
+// }
+
+// .cores(){
+//     color: @cor;
+//     background-color: @cor*0.2;
+//     font-size: 23px;
+// }
+// h1 {
+//     .cores(50px, 'h1');
+
+// }
+
+h1 {
+  .cores("h1");
+}
+
+// p {
+//     .cores(23, 'p')
+// }
+
+p {
+  .cores("p");
+}
+
+// .cores(@tamanho, @tag) {
+//     color: @cor;
+//     font-size: @tamanho;
+//     & when (@tag = 'h1'){
+//         text-shadow: 2px 1px 1px 7a7b7c;
+//     }
+//     & when (@tag = 'p') {
+//         background-color: lightgreen;
+//     }
+// }
+
+.cores (@tag) {
+  color: @cor*0.8;
+  font-size: @tamanho;
+  & when (@tag = "p") {
+    font-size: @tamanho * 1.23px;
+  }
+
+  & when (@tag = "h1") {
+    text-shadow: 2px 1px 1px 7a7b7c;
+    font-size: @tamanho * 2.5px;
+  }
+}

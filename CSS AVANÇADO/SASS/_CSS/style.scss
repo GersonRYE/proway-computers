@@ -1,0 +1,94 @@
+// $blue: lightblue;
+// $background: rgb(96, 176, 230);
+
+// body {
+//     background-color: $background;
+// }
+
+// .drop-shadow {
+//     text-shadow: 2px 1px 1px #ccc;
+//     text-decoration: underline;
+// }
+
+// h1 {
+//     color: $blue;
+// }
+
+// p {
+//     color: $blue;
+// }
+
+// $cor: lightblue;
+// $cor2: lightgrey;
+// $background: black;
+
+// @mixin fundoP($color) {
+//   background-color: $color;
+// }
+
+// body {
+//   @include fundoP($background);
+//   color: $cor2;
+//   margin: 10%;
+// }
+
+// .sombra {
+//   text-shadow: 2px 1px 1px #ccc;
+//   text-decoration: underline;
+//   color: $cor;
+// }
+
+// h1 {
+//   color: $cor;
+// }
+
+// p {
+//   background-color: rgb(217, 135, 250);
+//   b {
+//     color: rgb(104, 214, 113);
+//   }
+// }
+
+@import 'base', 'formatacaotxt';
+
+$cor2: light + grey;
+$background: black;
+$tamanho: 17;
+
+@mixin fundoP($color) {
+  background-color: $color;
+}
+
+div {
+  p {
+    @include fundoP($background);
+    b {
+      color: rgb(0, 255, 64);
+    }
+  }
+}
+
+body {
+  @include fundoP($background);
+  @if ($background == black) {
+    color: #{$cor2};
+    font-size: #{$tamanho + px};
+  } @else {
+    color: darkblue;
+    background-color: lightskyblue;
+  }
+  margin: 10% * 2;
+}
+
+$corDiv : red;
+$tamanho2: 10px;
+
+@for $i from 1 through 3 {
+  $nome: '#id-' + $i;
+  #{$nome} {
+    font-size: $tamanho2 + ($i*4);
+    background-color: lighten($corDiv, $i * 15%);
+  }
+}
+
+
