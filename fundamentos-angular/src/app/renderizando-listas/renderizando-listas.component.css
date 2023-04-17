@@ -1,0 +1,20 @@
+.listas-produtos{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.listas-produtos strong{
+    display: block;
+}
+
+.listas-produtos span{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+}
+
+.listas-produtos .esgotado{
+    background-color: black;
+}

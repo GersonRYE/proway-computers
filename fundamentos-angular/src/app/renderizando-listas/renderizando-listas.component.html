@@ -1,0 +1,12 @@
+<h2>Renderizando uma lista de dados</h2>
+<ul class="listas-produtos">
+    <li *ngFor="let celular of celulares">
+        <strong>{{celular.nome}}</strong>
+        <p>{{celular.descricao}}</p>
+        <!--Se celular estiver esgotado entao = "esgotado" senao disponivel-->
+        <!--PropertyBind [ngClass] coloca uma classe se for produto esgotado ou nao, se for esgotado adiciona a propriedade do css 'esgotado'-->
+        <span [ngClass]="celular.esgotado ? 'esgotado' : ''">{{celular.esgotado ? "esgotado": "disponivel"}}</span>
+    </li>
+</ul>
+
+

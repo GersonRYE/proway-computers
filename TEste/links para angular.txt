@@ -1,0 +1,49 @@
+https://www.npmjs.com/search?q=navbar - link para bibliotecas angular
+
+ng new <nomedoprojeto> - cria projeto
+npm start
+ng generate component <nome do componente> ou ng g c <nome do componente> - criando componente
+ng g p <nome do componente> cria um arquivo tipo pipe
+ng g module lazy-loading --route=lazy-loading --module=app.module
+
+Comando para limitar o acesso a pagina, precisa de autorização - escreva e escolha a opção abaixo
+ng g guard auth
+CanActivate
+
+jwt.io - codificação de tokens site
+// comando para criar 5 listas
+(li>a)*5
+
+// site de icones
+https://fontawesome.com/
+
+// cria o app.module a parte
+ng g module app-routing --flat --module app.module
+
+
+// cria auto a rota de produtos e lazytloading
+ng g module produtos --route produtos --module app.module
+
+//  add detalhe-produto dentro de produto
+ng g c produtos/detalhes-produto ---module produtos.module
+
+ ng g module carrinho --route carrinho --module app.module
+
+ng g module contato --route contato --module app.module
+
+// mascara para validações
+npm install --save ngx-mask
+
+pacotes module
+https://www.npmjs.com/package/ngx-mask/v/13.1.15
+
+// build
+mudar no angular.json
+gera a build do projeto
+output-path docs -> veja se existe
+se n faça o comando abaixo
+ng build --base-href="https://GersonRYE.github.io/proway-computers/"  --output-path docs
+
+ou
+
+ng build --base-href="https://GersonRYE.github.io/proway-computers/"
